@@ -1,0 +1,7 @@
+---
+applications:
+- name: gatsby-homepage
+  host: gatsby-homepage-lfranklin
+  memory: 64M
+  path: public
+  buildpack: https://github.com/cloudfoundry-incubator/staticfile-buildpack
