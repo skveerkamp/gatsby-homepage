@@ -18,10 +18,13 @@ export default class Index extends React.Component {
           <img src={fuzzyFriend} className="hero-image"/>
           <ul>
             <li>
-              <Link to={prefixLink('/markdown/')}>Markdown</Link>
+              <Link to={prefixLink('/work/')}>Work</Link>
             </li>
             <li>
-              <Link to={prefixLink('/react/')}>JSX (React components)</Link>
+              <Link to={prefixLink('/blog/')}>Blog</Link>
+            </li>
+            <li>
+              <Link to={prefixLink('/about/')}>About</Link>
             </li>
           </ul>
         </div>
