@@ -1,7 +1,9 @@
 import React from 'react'
-import 'css/markdown-styles.css'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
+
+// Styles for highlighted code blocks.
+import 'css/zenburn.css'
 
 module.exports = React.createClass({
   propTypes () {
