@@ -3,19 +3,12 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
-
-import sortBy from 'lodash/fp/sortBy'
-import filter from 'lodash/fp/filter'
-import flow from 'lodash/fp/flow'
-import reverse from 'lodash/fp/reverse'
+import Pages from 'utils/pages'
 
 export default class BlogComponent extends React.Component {
   render () {
-    const blogPages = flow([
-      filter(page => page.path.match(/\/blog\/.+/)),
-      sortBy(page => page.data.date),
-      reverse
-    ])(this.props.route.pages)
+    const pages = new Pages(this.props.route.pages)
+    const blogPages = pages.filter(/\/blog\/.+/)
 
     const pageItems = []
     blogPages.forEach(page => {
