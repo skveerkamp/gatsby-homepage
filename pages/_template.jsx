@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 
@@ -12,24 +11,18 @@ module.exports = React.createClass({
   render () {
     return (
       <div>
-        <div className="navbar">
-          <Container className="container"
-            style={{
-              maxWidth: 960,
-            }}
-          >
+        <div className="navbar row">
+          <div className="container col-xs">
             <Link to={prefixLink('/')}>
               Lyle's Homepage
             </Link>
-          </Container>
+          </div>
         </div>
-        <Container
-          style={{
-            maxWidth: 960,
-          }}
-        >
-          {this.props.children}
-        </Container>
+        <div className="row">
+          <div className="col-xs">
+            {this.props.children}
+          </div>
+        </div>
       </div>
     )
   },

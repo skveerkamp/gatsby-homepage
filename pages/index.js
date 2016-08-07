@@ -4,6 +4,8 @@ import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
 import Pages from 'utils/pages'
+
+import 'css/flexboxgrid.css'
 import 'css/style.less'
 
 import fuzzyFriend from './images/corgi.jpg'

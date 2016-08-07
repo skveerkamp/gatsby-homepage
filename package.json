@@ -15,6 +15,7 @@
     "highlight.js": "^9.3.0",
     "history": "^2.0.2",
     "js-yaml": "^3.6.0",
+    "lodash": "^4.14.1",
     "markdown-it": "^7.0.0",
     "markdown-it-abbr": "^1.0.3",
     "markdown-it-attrs": "^0.6.0",
@@ -26,7 +27,6 @@
     "react": "^15.3.0",
     "react-document-title": "^2.0.1",
     "react-dom": "^15.3.0",
-    "react-responsive-grid": "^0.3.3",
     "react-router": "^2.6.1",
     "toml-js": "0.0.8"
   },
@@ -43,7 +43,6 @@
     "eslint-plugin-react": "^5.1.1",
     "gh-pages": "^0.11.0",
     "image-webpack-loader": "^2.0.0",
-    "lodash": "^4.14.1",
     "null-loader": "^0.1.1",
     "postcss-loader": "^0.9.1",
     "react-transform-catch-errors": "^1.0.2",
