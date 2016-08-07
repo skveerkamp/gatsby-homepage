@@ -16,22 +16,33 @@ export default class Index extends React.Component {
     const workPages = pages.filter(/\/work\/.+/)
     const blogPages = pages.filter(/\/blog\/.+/)
 
+    var Tile = React.createClass({
+      render: function() {
+        const page = this.props.page
+        const title = page.data.title
+        var cover = ''
+        if (page.data.cover) {
+          cover = <img src={page.data.cover} width="100px"/>
+        }
+        return (
+          <div key={title} className="col-xs">
+            {cover}
+            <Link to={prefixLink(page.path)}>{title}</Link>
+          </div>
+        )
+      }
+    })
+
     const workItems = []
     workPages.forEach(page => {
-      const title = page.data.title
       workItems.push(
-        <li key={title}>
-          <Link to={prefixLink(page.path)}>{title}</Link>
-        </li>
+        <Tile key={page.path} page={page}></Tile>
       )
     })
     const blogItems = []
     blogPages.forEach(page => {
-      const title = page.data.title
       blogItems.push(
-        <li key={title}>
-          <Link to={prefixLink(page.path)}>{title}</Link>
-        </li>
+        <Tile key={page.path} page={page}></Tile>
       )
     })
 
@@ -45,15 +56,15 @@ export default class Index extends React.Component {
           <ul>
             <li>
               <Link to={prefixLink('/work/')}>Work</Link>
-              <ul>
+              <div className="row">
                 {workItems}
-              </ul>
+              </div>
             </li>
             <li>
               <Link to={prefixLink('/blog/')}>Blog</Link>
-              <ul>
+              <div className="row">
                 {blogItems}
-              </ul>
+              </div>
             </li>
             <li>
               <Link to={prefixLink('/about/')}>About</Link>

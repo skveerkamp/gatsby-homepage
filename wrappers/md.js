@@ -13,9 +13,14 @@ module.exports = React.createClass({
   },
   render () {
     const post = this.props.route.page.data
+    var cover = ''
+    if (post.cover) {
+      cover = <img src={post.cover} className="hero-image"/>
+    }
     return (
       <DocumentTitle title={`${config.siteTitle} | ${post.title}`}>
         <div className="markdown">
+          {cover}
           <h1>{post.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.body }} />
         </div>
