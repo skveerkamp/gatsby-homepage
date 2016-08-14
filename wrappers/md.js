@@ -24,8 +24,8 @@ const Sidebar = React.createClass({
       const anchorID = matches[1]
       const anchorHREF = "#" + anchorID
       sidebarItems.push(
-        <div>
-          <a key={anchorID} href={prefixLink(anchorHREF)}>{anchorID}</a>
+        <div key={anchorID}>
+          <a href={prefixLink(anchorHREF)}>{anchorID}</a>
         </div>
       )
     }
