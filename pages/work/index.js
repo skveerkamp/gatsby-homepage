@@ -8,7 +8,7 @@ import Pages from 'utils/pages'
 export default class WorkComponent extends React.Component {
   render () {
     const pages = new Pages(this.props.route.pages)
-    workPages = pages.filter(/\/work\/.+/)
+    const workPages = pages.filter(/\/work\/.+/)
 
     const pageItems = []
     workPages.forEach(page => {
