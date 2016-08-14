@@ -15,7 +15,13 @@ const Sidebar = React.createClass({
   render: function() {
     const post = this.props.post
     if (!post.sidebar) {
-      return null
+      return (
+      <div className="row">
+        <div className="col-xs">
+        {this.props.children}
+        </div>
+      </div>
+      )
     }
     var sidebarItems = []
     const regex = /<a[^>]*id="([\w\-]+)"/g
