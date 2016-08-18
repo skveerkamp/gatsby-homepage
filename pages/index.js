@@ -24,9 +24,14 @@ export default class Index extends React.Component {
         if (page.data.cover) {
           cover = <img src={page.data.cover} width="100px"/>
         }
+        var blogDate = ''
+        if (page.data.date && page.path.includes('/blog/')) {
+          blogDate = page.data.date
+        }
         return (
           <div key={title} className="col-xs">
             {cover}
+            {blogDate}
             <Link to={prefixLink(page.path)}>{title}</Link>
           </div>
         )
