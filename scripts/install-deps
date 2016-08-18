@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -eu
+
+release_dir="$( cd $(dirname $0) && cd .. && pwd )"
+
+pushd "${release_dir}" > /dev/null
+  npm install
+
+  set +e
+  which gatsby > /dev/null
+  gatsby_found=$?
+  set -e
+
+  if [ "${gatsby_found}" != "0" ]; then
+    sudo npm install -g gatsby
+  fi
+popd > /dev/null

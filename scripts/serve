@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -eu
+
+release_dir="$( cd $(dirname $0) && cd .. && pwd )"
+
+pushd "${release_dir}" > /dev/null
+  gatsby develop
+popd > /dev/null
