@@ -1,39 +1,45 @@
-// import React from 'react'
-// import PageTransition from 'gatsby-plugin-page-transitions'
-
-// const Page = ({ children }) => (
-//   <PageTransition
-//     defaultStyle={{
-//       transition: 'left 400ms cubic-bezier(0.47, 0, 0.75, 0.72)',
-//       left: '100%',
-//       position: 'absolute',
-//       width: '100%',
-//     }}
-//     transitionStyles={{
-//       entering: { left: '0%' },
-//       entered: { left: '0%' },
-//       exiting: { left: '-100%' },
-//       exited: { left: '-100%' },
-//     }}
-//     transitionTime={400}
-//   >
-//     <div style={{
-//       background: "blue",
-//       width: "1170px",
-//       marginLeft: "auto",
-//       marginRight: "auto",
-//     }}>
-//     {children}
-//     </div>
-//   </PageTransition>
-// )
-
-// export default Page
 import React from 'react'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
-const Page = ({ children }) => (
+class TransitionHandler extends React.Component {
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.props.location.pathname === window.location.pathname;
+  }
+
+  render() {
+    const {children} = this.props;
+    return (
+      <div className="transition-container">
+        {children}
+      </div>
+    );
+  }
+}
+
+const Page = ({ children, location }) => (
   <div>
-    {children}
+    <TransitionGroup>
+      <CSSTransition
+          key={location.pathname}
+          classNames="example"
+          timeout={{ enter: 500, exit: 500 }}
+      >
+        <TransitionHandler
+            location={location}
+        >
+          <div
+            style={{
+              margin: '0 auto',
+              maxWidth: 960,
+              padding: '0px 1.0875rem 1.45rem',
+              paddingTop: 0,
+            }}
+          >
+            {children}
+          </div>
+        </TransitionHandler>
+      </CSSTransition>
+    </TransitionGroup>
   </div>
 )
 
