@@ -1,7 +1,4 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
-
- // You can delete this file if you're not using it
+exports.onInitialClientRender = () => {
+  document.body.style['background-image'] = 'none';
+  document.getElementsByClassName('main')[0].classList.add('loaded');
+}

@@ -6,6 +6,7 @@ import Helmet from 'react-helmet'
 import Header from '../components/header'
 import Page from '../components/page'
 import './index.css'
+import './loader.css'
 
 const Layout = ({ children, location, data }) => (
   <div>
@@ -17,7 +18,7 @@ const Layout = ({ children, location, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <div>
+    <div className='main'>
       <Page location={location}>
         {children()}
       </Page>
