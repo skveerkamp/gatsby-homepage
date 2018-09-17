@@ -1,6 +1,6 @@
 ## TODO
 
-- [ ] Render markdown files
+- [x] Render markdown files
 - [ ] Sliding page transition
 - [ ] Display spinner until pages loaded
       - base64 encode spinner
