@@ -1,7 +1,7 @@
 ## TODO
 
 - [x] Render markdown files
-- [ ] Sliding page transition
+- [x] Sliding page transition
 - [ ] Display spinner until pages loaded
       - base64 encode spinner
       - https://www.gatsbyjs.org/docs/browser-apis/#onInitialClientRender

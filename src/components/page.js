@@ -1,6 +1,9 @@
 import React from 'react'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
+import './page.css'
+
+/* adapted from: https://github.com/hochem/gatsby-animation-example */
 class TransitionHandler extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     return this.props.location.pathname === window.location.pathname;
@@ -9,7 +12,7 @@ class TransitionHandler extends React.Component {
   render() {
     const {children} = this.props;
     return (
-      <div className="transition-container">
+      <div className='sliding-container'>
         {children}
       </div>
     );
@@ -21,8 +24,8 @@ const Page = ({ children, location }) => (
     <TransitionGroup>
       <CSSTransition
           key={location.pathname}
-          classNames="example"
           timeout={{ enter: 500, exit: 500 }}
+          classNames='sliding'
       >
         <TransitionHandler
             location={location}
