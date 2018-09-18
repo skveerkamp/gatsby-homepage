@@ -1,7 +1,8 @@
 ---
 applications:
 - name: homepage-gatsby
-  host: homepage-gatsby
   memory: 64M
   path: public
-  buildpack: https://github.com/cloudfoundry-incubator/staticfile-buildpack
+  buildpack: https://github.com/cloudfoundry/nginx-buildpack
+  routes:
+  - route: homepage-gatsby.cfapps.io

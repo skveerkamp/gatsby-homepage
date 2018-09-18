@@ -5,10 +5,13 @@
 - [x] Display spinner until pages loaded
       - base64 encode spinner
       - https://www.gatsbyjs.org/docs/browser-apis/#onInitialClientRender
-- [ ] Push to CF
-- [ ] Gzip files
+- [x] Push to CF
+- [x] Gzip files
       - https://github.com/ovhemert/gatsby-plugin-zopfli
-- [ ] Fetch files from CDN
+- [x] Switch to nginx buildpack
+      - https://docs.cloudfoundry.org/buildpacks/nginx/index.html
+- [ ] Bump to Gatsby 2.x
+- [ ] Animate list items one at a time
 - [ ] Embed video
-- [ ] Embed PDF
 - [ ] Move blog over to Medium
+- [ ] Front with CloudFront
