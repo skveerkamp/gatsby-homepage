@@ -5,3 +5,5 @@ title: "My Second blog post"
 ---
 
 ## Second!
+
+<a href="/blog/my-first-post">First!</a>

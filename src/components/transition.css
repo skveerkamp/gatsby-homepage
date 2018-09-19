@@ -12,7 +12,7 @@
 
 .sliding-enter.sliding-enter-active {
   left: 0%;
-  transition: left 500ms ease-in-out;
+  transition: left 350ms ease-in-out;
 }
 
 .sliding-exit {
@@ -21,5 +21,5 @@
 
 .sliding-exit.sliding-exit-active {
   left: -100%;
-  transition: left 500ms ease-in-out;
+  transition: left 350ms ease-in-out;
 }

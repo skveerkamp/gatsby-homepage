@@ -6,4 +6,4 @@ title: "My first blog post"
 
 ## testing!
 
-<a href="/blog/my-second-post">Hi!</a>
+<a href="/blog/my-second-post">Second!</a>
