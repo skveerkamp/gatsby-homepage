@@ -15,3 +15,5 @@
 - [ ] Embed video
 - [ ] Move blog over to Medium
 - [ ] Front with CloudFront
+- [ ] Run speed test
+- [ ] Fix source map error

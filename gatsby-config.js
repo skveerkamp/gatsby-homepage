@@ -30,6 +30,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
+    'gatsby-plugin-catch-links',
     'gatsby-plugin-compression-v2',
     'gatsby-plugin-offline',
   ],
