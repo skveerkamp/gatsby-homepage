@@ -6,7 +6,7 @@ import StaggeredList from './staggeredList'
 import './transition.css'
 
 const Transition = ({ children, location }) => (
-  <div>
+  <div className='sliding-parent'>
     <TransitionGroup>
       <CSSTransition
         key={location.pathname}

@@ -20,7 +20,7 @@ const Layout = ({ children, location }) => (
       }
     `}
     render={data => (
-      <>
+      <div className='top-level'>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -34,7 +34,7 @@ const Layout = ({ children, location }) => (
         <div className='main'>
           <Transition location={location}>{children}</Transition>
         </div>
-      </>
+      </div>
     )}
   />
 )
