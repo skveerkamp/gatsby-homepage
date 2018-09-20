@@ -1,6 +1,8 @@
 import React from 'react'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
+import StaggeredList from './staggeredList'
+
 import './transition.css'
 
 const Transition = ({ children, location }) => (
@@ -22,7 +24,9 @@ const Transition = ({ children, location }) => (
               paddingTop: 0,
             }}
           >
-            {children}
+            <StaggeredList>
+              {children}
+            </StaggeredList>
           </div>
         </div>
       </CSSTransition>

@@ -11,7 +11,7 @@
 - [x] Switch to nginx buildpack
       - https://docs.cloudfoundry.org/buildpacks/nginx/index.html
 - [x] Bump to Gatsby 2.x
-- [ ] Animate list items one at a time
+- [x] Animate list items one at a time
 - [ ] Embed video
 - [ ] Move blog over to Medium
 - [ ] Front with CloudFront
