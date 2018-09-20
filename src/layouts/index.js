@@ -20,7 +20,15 @@ const Layout = ({ children, location }) => (
       }
     `}
     render={data => (
-      <div className='top-level'>
+      <div
+        style={{
+          position: 'absolute',
+          top: '100px',
+          left: 0,
+          right: 0,
+          bottom: 0,
+        }}
+      >
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -28,10 +36,18 @@ const Layout = ({ children, location }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
-          <html lang="en" />
+          <html lang="en"
+            // eslint-disable-next-line react/style-prop-object
+            style="overflow: hidden;" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className='main'>
+        <div className='main' style={{
+            position: 'relative',
+            height: '100%',
+            width: '100%',
+            overflow: 'hidden',
+          }}
+        >
           <Transition location={location}>{children}</Transition>
         </div>
       </div>
