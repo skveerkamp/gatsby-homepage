@@ -29,7 +29,14 @@ module.exports = {
         name: "markdown-pages",
       },
     },
-    'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-responsive-iframe',
+        ],
+      },
+    },
     'gatsby-plugin-catch-links',
     'gatsby-plugin-compression-v2',
     'gatsby-plugin-offline',
