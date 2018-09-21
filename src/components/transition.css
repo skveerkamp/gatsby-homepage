@@ -10,14 +10,9 @@
   overflow-y: auto;
 }
 
-.sliding-container {
-  position: absolute;
-  left: 0%;
-  width: 100%;
-}
-
 .sliding-enter {
   left: 100%;
+  overflow-y: hidden;
 }
 
 .sliding-enter.sliding-enter-active {
@@ -27,6 +22,7 @@
 
 .sliding-exit {
   left: 0%;
+  overflow-y: hidden;
 }
 
 .sliding-exit.sliding-exit-active {

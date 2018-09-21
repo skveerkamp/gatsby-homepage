@@ -13,8 +13,9 @@
 - [x] Bump to Gatsby 2.x
 - [x] Animate list items one at a time
 - [x] Embed video
+- [x] Fix scrollbar sliding over
+- [ ] Add style
 - [ ] Run speed test
 - [ ] Front with CloudFront
-- [ ] Add style
 - [ ] Move blog over to Medium
 - [ ] Fix source map error
