@@ -36,9 +36,7 @@ const Layout = ({ children, location }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
-          <html lang="en"
-            // eslint-disable-next-line react/style-prop-object
-            style="overflow: hidden;" />
+          <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className='main' style={{
