@@ -40,5 +40,6 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-compression-v2',
     'gatsby-plugin-offline',
+    'gatsby-plugin-sass',
   ],
 }
