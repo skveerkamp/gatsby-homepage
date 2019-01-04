@@ -28,6 +28,7 @@ const Layout = ({ children, location }) => (
           right: 0,
           bottom: 0,
         }}
+        className='loader'
       >
         <Helmet
           title={data.site.siteMetadata.title}
@@ -36,12 +37,12 @@ const Layout = ({ children, location }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
-            <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Sarabun:700,800" rel="stylesheet"/> 
           <html lang="en" />
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Sarabun:700,800" rel="stylesheet"/> 
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main role='main' className='main' style={{
+        <main role='main' style={{
             position: 'relative',
             height: '100%',
             width: '100%',

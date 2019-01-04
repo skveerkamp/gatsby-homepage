@@ -12,11 +12,11 @@ body {
   height: 100%;
   width: 100%;
 }
-.main {
+.loader {
   opacity: 0;
 }
 /* class added by onInitialClientRender() in gatsby-browser.js */
-.main.loaded {
+.loader.loaded {
   opacity: 1;
-  transition: opacity 0.25s;
+  transition: opacity 0.5s;
 }
