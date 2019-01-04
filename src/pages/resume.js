@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 import StaggeredList from '../components/staggeredList'
 
@@ -71,9 +70,9 @@ const SecondPage = () => (
 					<br/>
           <h2>Projects</h2>
           <ul>
-            <li>2-hour video explaining TLS protocol: <a target="_blank" href="https://youtu.be/yzz3bcnWf7M">https://youtu.be/yzz3bcnWf7M</a></li>
-            <li>Guide  to  deploying  Kubernetes  on Raspberry Pi: <a target="_blank" href="https://github.com/ljfranklin/k8s-pi">https://github.com/ljfranklin/k8s-pi</a></li>
-            <li>Terraform  resource  for  ConcourseCI: <a target="_blank" href="https://github.com/ljfranklin/terraform-resource">https://github.com/ljfranklin/terraform-resource</a></li>
+            <li>2-hour video explaining TLS protocol: <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/yzz3bcnWf7M">https://youtu.be/yzz3bcnWf7M</a></li>
+            <li>Guide  to  deploying  Kubernetes  on Raspberry Pi: <a target="_blank" rel="noopener noreferrer" href="https://github.com/ljfranklin/k8s-pi">https://github.com/ljfranklin/k8s-pi</a></li>
+            <li>Terraform  resource  for  ConcourseCI: <a target="_blank" rel="noopener noreferrer" href="https://github.com/ljfranklin/terraform-resource">https://github.com/ljfranklin/terraform-resource</a></li>
           </ul>
         </div>
       </div>
