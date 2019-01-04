@@ -4,9 +4,7 @@ import Link from 'gatsby-link'
 import StaggeredList from '../components/staggeredList'
 
 const IndexPage = () => (
-  <div>
-  <main role="main">
-
+<div>
 
   <div className="jumbotron">
     <div className="jumbotron-inner container">
@@ -86,14 +84,7 @@ const IndexPage = () => (
       </div>
       </div>
     </div>
-
   </div>
-
-</main>
-
-<footer>
-  <span>&copy; Company 2017-2018</span>
-</footer>
 </div>
 )
 

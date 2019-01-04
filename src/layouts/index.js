@@ -41,15 +41,20 @@ const Layout = ({ children, location }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className='main' style={{
+        <main role='main' className='main' style={{
             position: 'relative',
             height: '100%',
             width: '100%',
             overflow: 'hidden',
           }}
         >
-          <Transition location={location}>{children}</Transition>
-        </div>
+          <Transition location={location}>
+            {children}
+            <footer>
+              <span>&copy; Company 2017-2018</span>
+            </footer>
+          </Transition>
+        </main>
       </div>
     )}
   />
