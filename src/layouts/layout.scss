@@ -1,45 +1,101 @@
 body {
-    font-family: 'Open Sans', sans-serif !important;
-    color:#333 !important;
+  font-family: 'Open Sans', sans-serif !important;
+  color:#333 !important;
 
-    a, p {
-      font-size: .9em;
+  a, p {
+    font-size: .9em;
+  }
+
+  a{
+    transition: all 0.4s;
+    color: #E36740;
+
+    &:hover{
+      text-decoration: underline !important;
+      color:#D2402D;
     }
+  }
 
-    a{
+  .title-link{
+      color:#333;
       transition: all 0.4s;
-      color: #E36740;
-
-      &:hover{
-            text-decoration: underline !important;
-            color:#D2402D;
-      }
-
-
-    }
-
-    .navbar-brand {
-      font-size: .75em;
-      color: #333;
+      font-size: 1.5em;
       font-weight: 600;
+    &:hover{
+      color:#666;
+      text-decoration: underline;
+    }
+  }
 
-      &:hover{
-        color:#666;
-      }
+  h2{
+    font-size: 1.5em;
+    font-weight: 600;
+  }
 
+  h3{
+    font-size: .9em;
+    font-weight: 600;
+    color:#333;
+    text-transform: uppercase;
+    margin-bottom:1em;
+  }
 
-      }
+  .date{
+    text-transform: uppercase;
+    color: #666;
+  }
 
-      a.nav-link{
-        color:#333;
-        &:hover{
-          color:#666;
-        }
+  .navbar{
+    -webkit-box-shadow: 0px 4px 19px -4px rgba(0,0,0,0.13);
+-moz-box-shadow: 0px 4px 19px -4px rgba(0,0,0,0.13);
+box-shadow: 0px 4px 19px -4px rgba(0,0,0,0.13);
+  }
 
+  .navbar-brand {
+    font-size: .75em;
+    color: #333;
+    font-weight: 600;
+
+    &:hover{
+      color:#666;
+    }
+  }
+
+  a.nav-link{
+    color:#333;
+    &:hover{
+      color:#666;
     }
 
-    .display-3{
-      font-family: 'Sarabun', sans-serif;
-      font-weight: 800;
+  }
+
+  .jumbotron{
+    background:#000;
+    background-image:linear-gradient(-164deg, #050507 2%, #1F254D 100%);
+    border-radius:0;
+
+    .jumbotron-inner{
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      padding-top: 4em;
+      padding-bottom: 4em;
     }
+  }
+
+  .display-3{
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 800;
+    color:#e1e1e1;
+  }
+
+  .margin-bottom{
+    margin-bottom:3em;
+  }
+
+  footer{
+    background:#E36740;
+    color:#fff;
+    padding:1em;
+  }
 }
