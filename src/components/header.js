@@ -3,15 +3,15 @@ import { Link } from 'gatsby'
 
 const Header = ({ siteTitle }) => (
   <nav className="navbar navbar-expand fixed-top">
-  <a className="navbar-brand" href="/">LYLE FRANKLIN</a>
+  <Link className="navbar-brand" to="/">LYLE FRANKLIN</Link>
 
   <div>
     <ul className="navbar-nav">
       <li className="nav-item">
-        <Link className="nav-link" to="resume">Resume</Link>
+        <Link activeClassName="active" className="nav-link" to="/resume">Resume</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="about">About</a>
+        <Link activeClassName="active" className="nav-link" href="/about">About</Link>
       </li>
     </ul>
   </div>
