@@ -1,3 +1,45 @@
 body {
     font-family: 'Open Sans', sans-serif !important;
+    color:#333 !important;
+
+    a, p {
+      font-size: .9em;
+    }
+
+    a{
+      transition: all 0.4s;
+      color: #E36740;
+
+      &:hover{
+            text-decoration: underline !important;
+            color:#D2402D;
+      }
+
+
+    }
+
+    .navbar-brand {
+      font-size: .75em;
+      color: #333;
+      font-weight: 600;
+
+      &:hover{
+        color:#666;
+      }
+
+
+      }
+
+      a.nav-link{
+        color:#333;
+        &:hover{
+          color:#666;
+        }
+
+    }
+
+    .display-3{
+      font-family: 'Sarabun', sans-serif;
+      font-weight: 800;
+    }
 }

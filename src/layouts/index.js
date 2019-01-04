@@ -37,7 +37,7 @@ const Layout = ({ children, location }) => (
           ]}
         >
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
-          <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sarabun" rel="stylesheet"/> 
+           <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Sarabun:700,800" rel="stylesheet"/>
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
