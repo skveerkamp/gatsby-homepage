@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
         <Link activeClassName="active" className="nav-link" to="/resume">Resume</Link>
       </li>
       <li className="nav-item">
-        <Link activeClassName="active" className="nav-link" href="/about">About</Link>
+        <Link activeClassName="active" className="nav-link" to="/about">About</Link>
       </li>
     </ul>
   </div>
