@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "=2.0.0-rc.25",
+    "gatsby": "^2.0.33",
     "gatsby-plugin-catch-links": "^2.0.2",
     "gatsby-plugin-compression-v2": "^0.1.0",
     "gatsby-plugin-layout": "^1.0.1",

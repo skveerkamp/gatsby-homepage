@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import cover from "../images/astro2.svg"
 
 import StaggeredList from '../components/staggeredList'
 
@@ -10,6 +11,7 @@ const IndexPage = () => (
     <div className="jumbotron-inner container">
       <h1 className="display-3">Lyle Franklin</h1>
       <p>Staff software engineer @ Pivotal Cloud Foundry</p>
+      <img src={cover} alt="astronaut image" />
     </div>
   </div>
 
