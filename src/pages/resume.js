@@ -6,6 +6,7 @@ const SecondPage = () => (
   <StaggeredList>
     <div className="container">
       <h3>Resume</h3>
+      <a href="https://github.com/ljfranklin/Resume-LaTeX/raw/master/resume.pdf">PDF Download</a>
       <div className="row">
         <div className="col-md-8">
           <h2 className="margin-bottom-1">Experience</h2>

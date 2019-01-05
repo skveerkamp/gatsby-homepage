@@ -6,14 +6,14 @@ const AboutPage = () => (
     <h1>About</h1>
     <p>
       I'm a generalist engineer with a focus on distributed systems and automation.
-      I currently work as a Staff Software Engineer at <a href="https://pivotal.io/">Pivotal Software</a>
-      where I help build <a href="https://www.cloudfoundry.org/">Cloud Foundry</a>,
+      I currently work as a Staff Software Engineer at <a target="_blank" rel="noopener noreferrer" href="https://pivotal.io/">Pivotal Software</a>
+      where I help build <a target="_blank" rel="noopener noreferrer" href="https://www.cloudfoundry.org/">Cloud Foundry</a>,
       an open source Platform-as-a-Service.
     </p>
     <p>
-      I enjoy hacking on interesting projects like a <a href="https://github.com/ljfranklin/k8s-pi">
+      I enjoy hacking on interesting projects like a <a target="_blank" rel="noopener noreferrer" href="https://github.com/ljfranklin/k8s-pi">
       Kubernetes Cluster on Raspberry Pi</a>, teaching technical concepts during Engineering Onboarding week,
-      or making overly long videos about <a href="https://youtu.be/yzz3bcnWf7M">networking protocols</a>.
+      or making overly long videos about <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/yzz3bcnWf7M">networking protocols</a>.
     </p>
     Some Favorites from outside of work:
     <ul>
