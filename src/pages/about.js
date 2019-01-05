@@ -1,9 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import cover from "../images/about.jpg"
+
 const AboutPage = () => (
   <div>
     <h1>About</h1>
+    <img width="100%" src={cover} alt="me overlooking a lake"/>
     <p>
       I'm a generalist engineer with a focus on distributed systems and automation.
       I currently work as a Staff Software Engineer at <a target="_blank" rel="noopener noreferrer" href="https://pivotal.io/">Pivotal Software</a>
