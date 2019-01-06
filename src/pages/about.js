@@ -1,6 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import cover from "../images/about.jpg"
 import music from "../images/music.jpg"
 import movie from "../images/movie.jpg"
 import book from "../images/book.jpg"
