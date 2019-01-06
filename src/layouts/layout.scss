@@ -11,6 +11,10 @@ body {
     line-height: 1.5em;
   }
 
+  a{
+    font-size: 1em;
+  }
+
   ul{
   }
 
@@ -44,7 +48,7 @@ body {
 
       span{
         position:relative;
-      top:3px
+        top:3px
       }
 
     }
@@ -53,8 +57,8 @@ body {
       color:#D2402D;
       .nav-link-highlighter{
         -webkit-box-shadow:0px 3px 0 #E36740;;
-         -moz-box-shadow:0px 3px 0 #E36740;;
-         box-shadow:0px 3px 0 #E36740;
+        -moz-box-shadow:0px 3px 0 #E36740;;
+        box-shadow:0px 3px 0 #E36740;
       }
     }
   }
@@ -72,7 +76,7 @@ body {
   h2{
     font-size: 1.5em;
     font-weight: 700;
-        line-height: 1.5em;
+    line-height: 1.5em;
   }
 
   h3{
@@ -81,19 +85,19 @@ body {
     color:#333;
     text-transform: uppercase;
     margin-bottom:1em;
-        line-height: 1.5em;
+    line-height: 1.5em;
   }
 
   h4{
     font-weight: 400;
     font-size: 1.3em;
-        line-height: 1.5em;
+    line-height: 1.5em;
   }
 
   h5{
     font-weight: 600;
     font-size: .9em;
-        line-height: 1.5em;
+    line-height: 1.5em;
   }
 
   .date{
@@ -131,16 +135,23 @@ body {
       color:#666;
       .nav-link-highlighter{
         -webkit-box-shadow:0px 3px 0 #d2402d;;
-         -moz-box-shadow:0px 3px 0 #d2402d;;
-         box-shadow:0px 3px 0 #d2402d;
-         text-decoration: none;
+        -moz-box-shadow:0px 3px 0 #d2402d;;
+        box-shadow:0px 3px 0 #d2402d;
+        text-decoration: none;
       }
     }
 
   }
 
+  .jumbotron.jumbotron-about{
+    background-image:url("../images/about.jpg");
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    height: 424px;
+  }
+
   .jumbotron{
-    background:#000;
+    background:#fff;
     background-image:linear-gradient(-164deg, #050507 2%, #1F254D 100%);
     border-radius:0;
     max-height: 424px;
@@ -206,16 +217,12 @@ body {
       .footer-social_github,
       .footer-social_linkedin {
         img{
-                  width:24px;
+          width:24px;
         }
-
-
-
-
-    }
-    .footer-social_github{
-      margin-right:1em;
-    }
+      }
+      .footer-social_github{
+        margin-right:1em;
+      }
     }
 
   }
@@ -244,6 +251,16 @@ body {
 
 
   @media screen and (max-width: 992px){
+
+    footer{
+
+      .footer-social{
+        display:flex;
+        margin-top:1em;
+        justify-content: flex-start !important;
+      }
+    }
+
     .jumbotron{
       .jumbotron-inner{
         text-align: center;
@@ -282,6 +299,13 @@ body {
       margin-bottom:1em;
     }
   }
-
-
 }
+
+  @media screen and (max-width: 576px){
+    .jumbotron.jumbotron-about{
+      background:#fff;
+      background-image:url("../images/about-small.jpg");
+      height:200px;
+      background-position:50% 50%;
+    }
+  }
