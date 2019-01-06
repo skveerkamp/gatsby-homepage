@@ -8,6 +8,8 @@ tags: ["blog"]
 
 A 2-hour video describing the TLS protocol and its underlying concepts.
 
+<iframe width="1216" height="684" src="https://www.youtube.com/embed/yzz3bcnWf7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 **Outline:**
 
 Intro 0:00 - https://youtu.be/yzz3bcnWf7M

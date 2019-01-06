@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import cover from "../images/astro2.svg"
-import bullet from "../images/li-bullet.svg"
 import { graphql } from "gatsby"
 
 const IndexPage = ({ pageContext, data }) => {
