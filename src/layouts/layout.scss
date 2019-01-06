@@ -248,9 +248,23 @@ body {
 
   }
 
+  .hobbies img{
+    width:100%;
+    max-width: 100px;
+  }
+
+  .hobbies{
+          margin-bottom:1em;
+  }
+
 
 
   @media screen and (max-width: 992px){
+
+    .hobbies img{
+      max-width: 100px;
+            margin-bottom:1em;
+    }
 
     footer{
 
@@ -299,7 +313,6 @@ body {
       margin-bottom:1em;
     }
   }
-}
 
   @media screen and (max-width: 576px){
     .jumbotron.jumbotron-about{
@@ -309,3 +322,5 @@ body {
       background-position:50% 50%;
     }
   }
+
+}

@@ -29,7 +29,7 @@ const AboutPage = () => (
     </div>
     </div>
 
-    <div className="row">
+    <div className="row hobbies">
 
       <div className="col-md-4">
         <div className="row">
@@ -69,7 +69,7 @@ const AboutPage = () => (
 </div>
 
 
-  <div className="row header-margin-2">
+  <div className="row hobbies">
 
   <div className="col-md-4">
     <div className="row">
