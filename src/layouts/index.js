@@ -23,7 +23,7 @@ const Layout = ({ children, location }) => (
       <div
         style={{
           position: 'absolute',
-          top: '56px',
+          top: '52px',
           left: 0,
           right: 0,
           bottom: 0,
@@ -39,7 +39,7 @@ const Layout = ({ children, location }) => (
         >
           <html lang="en" />
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"/>
-          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Sarabun:700,800" rel="stylesheet"/> 
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Sarabun:700,800" rel="stylesheet"/>
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <main role='main' style={{

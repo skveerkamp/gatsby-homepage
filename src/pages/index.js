@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import cover from "../images/astro2.svg"
+import bullet from "../images/li-bullet.svg"
 import { graphql } from "gatsby"
 
 const IndexPage = ({ pageContext, data }) => {
@@ -11,9 +12,15 @@ const IndexPage = ({ pageContext, data }) => {
 
   <div className="jumbotron">
     <div className="jumbotron-inner container">
+    <div className="jumbotron-inner_img">
+      <div className="jumbotron-inner_astro">
+        <img src={cover} alt="astronaut" />
+      </div>
+      </div>
+      <div className="jumbotron-inner_tagline">
       <h1 className="display-3">Lyle Franklin</h1>
       <p>Staff software engineer @ Pivotal Cloud Foundry</p>
-      <img src={cover} alt="astronaut" />
+      </div>
     </div>
   </div>
 

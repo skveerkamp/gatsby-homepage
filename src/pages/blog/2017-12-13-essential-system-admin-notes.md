@@ -1,18 +1,20 @@
 ---
 path: "/blog/notes-sys-admin-book"
 date: "2017-12-13"
-title: "Notes from Essential System Administration"
+title: "Notes: Essential System Administration"
 summary: "Notes from reading the Essential System Administration book"
 tags: ["blog"]
 ---
 
-Book Author: Æleen Frisch
 
-Link: http://shop.oreilly.com/product/9780596003432.do
+[Grab a copy](http://shop.oreilly.com/product/9780596003432.do "Essential System Administration Book") 
+
+---
 
 ## Preface:
 
 - macOS descended from the BSD line of UNIX while Linux came from the GNU line. Linux inherited some characteristic from BSD and some from System V.
+
 
 ## Chapter 1 - Intro:
 
