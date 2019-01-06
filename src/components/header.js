@@ -8,10 +8,18 @@ const Header = ({ siteTitle }) => (
   <div>
     <ul className="navbar-nav">
       <li className="nav-item">
-        <Link activeClassName="active" className="nav-link" to="/resume">Resume</Link>
+        <Link activeClassName="active" className="nav-link" to="/resume">
+        <div className="nav-link-highlighter">
+        <span>Resume</span>
+        </div>
+        </Link>
       </li>
       <li className="nav-item">
-        <Link activeClassName="active" className="nav-link" to="/about">About</Link>
+        <Link activeClassName="active" className="nav-link" to="/about">
+      <div className="nav-link-highlighter">
+        <span>About</span>
+        </div>
+        </Link>
       </li>
     </ul>
   </div>

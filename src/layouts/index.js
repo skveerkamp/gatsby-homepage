@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Transition from "../components/transition"
 import Header from '../components/header'
+import github from "../images/github.svg"
+import linkedin from "../images/linkedin2.svg"
 import { StaticQuery, graphql } from 'gatsby'
 
 import './loader.css'
@@ -52,7 +54,28 @@ const Layout = ({ children, location }) => (
           <Transition location={location}>
             {children}
             <footer>
-              <span>&copy; Company 2017-2018</span>
+            <div className="container">
+            <div className="row">
+            <div className="col-md-6">
+              <span>&copy; Lyle Franklin 2019</span>
+              </div>
+              <div className="col-md-6">
+                <div className="footer-social">
+                  <div className="footer-social_github">
+                  <a href="https://www.linkedin.com/in/lylefranklin/">
+                    <img src={github} alt="github profile" />
+                    </a>
+                  </div>
+                  <div className="footer-social_linkedin">
+                  <a href="https://github.com/ljfranklin">
+                    <img src={linkedin} alt="linkedin profile" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              </div>
+              </div>
+
             </footer>
           </Transition>
         </main>
