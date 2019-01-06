@@ -34,6 +34,7 @@ module.exports = {
       options: {
         plugins: [
           'gatsby-remark-responsive-iframe',
+          'gatsby-remark-autolink-headers',
         ],
       },
     },
