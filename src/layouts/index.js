@@ -62,12 +62,12 @@ const Layout = ({ children, location }) => (
               <div className="col-md-6">
                 <div className="footer-social">
                   <div className="footer-social_github">
-                  <a href="https://www.linkedin.com/in/lylefranklin/">
+                  <a href="https://github.com/ljfranklin">
                     <img src={github} alt="github profile" />
                     </a>
                   </div>
                   <div className="footer-social_linkedin">
-                  <a href="https://github.com/ljfranklin">
+                  <a href="https://www.linkedin.com/in/lylefranklin/">
                     <img src={linkedin} alt="linkedin profile" />
                     </a>
                   </div>
