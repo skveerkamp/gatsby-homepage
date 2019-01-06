@@ -5,7 +5,7 @@ import cover from "../images/about.jpg"
 
 const AboutPage = () => (
   <div>
-    <h1>About</h1>
+    <h3 className="main-title header-margin-2">About</h3>
     <img width="100%" src={cover} alt="me overlooking a lake"/>
     <p>
       I'm a generalist engineer with a focus on distributed systems and automation.

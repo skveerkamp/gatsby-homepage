@@ -4,10 +4,16 @@ import StaggeredList from '../components/staggeredList'
 
 const SecondPage = () => (
   <StaggeredList>
-    <div className="container">
+    <div className="container header-margin-2">
+    <div className="row">
+    <div className="col-md-8">
       <h3>Resume</h3>
-      <a href="https://github.com/ljfranklin/Resume-LaTeX/raw/master/resume.pdf">PDF Download</a>
-      <div className="row">
+      </div>
+      <div className="col-md-4">
+      <a class="btn btn-primary" href="https://github.com/ljfranklin/Resume-LaTeX/raw/master/resume.pdf" role="button">Download PDF</a>
+      </div>
+      </div>
+      <div className="row header-margin-1">
         <div className="col-md-8">
           <h2 className="margin-bottom-1">Experience</h2>
           <h4>Staff Software Engineer @ Pivotal Cloud Foundry</h4>
@@ -44,32 +50,28 @@ const SecondPage = () => (
           </ul>
         </div>
         <div className="col-md-4">
-          <h2>Education</h2>
+          <h2 className="margin-bottom-1">Education</h2>
           <h4>University of Southern California</h4>
           <h5>M.S. in Computer Science, spec. in Software Engineering</h5>
-					<div>Graduated: Dec '14</div>
-					<div>GPA: 4.00</div>
-					<br/>
+					<p>Graduated: Dec '14<br/>GPA: 4.00</p>
+
           <h4>Ball State University</h4>
           <h5>B.S. in Computer Science</h5>
-					<div>Graduated: Dec '12</div>
-					<div>GPA: 3.95</div>
+					<p>Graduated: Dec '12<br/>GPA: 3.95</p>
 
-					<br/>
-          <h2>Skills</h2>
+          <h2 className="margin-bottom-1 header-margin-1">Skills</h2>
 					<h5>Written production code with:</h5>
-          <div>Go, Ruby, Bash, SQL</div>
+          <p>Go, Ruby, Bash, SQL</p>
           <h5>Played around with:</h5>
-          <div>Java, JavaScript, CSS/LESS/SASS</div>
+          <p>Java, JavaScript, CSS/LESS/SASS</p>
           <h5>Deployed with:</h5>
-          <div>Kubernetes, Cloud Foundry, ConcourseCI, Terraform, Ansible</div>
+          <p>Kubernetes, Cloud Foundry, ConcourseCI, Terraform, Ansible</p>
           <h5>Deployed to:</h5>
-          <div>Google Cloud, AWS, vSphere, Azure</div>
+          <p>Google Cloud, AWS, vSphere, Azure</p>
           <h5>Developed by:</h5>
-          <div>Test Driven Development, Pair Programming</div>
+          <p>Test Driven Development, Pair Programming</p>
 
-					<br/>
-          <h2>Projects</h2>
+          <h2 className="margin-bottom-1 header-margin-1">Projects</h2>
           <ul>
             <li>2-hour video explaining TLS protocol: <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/yzz3bcnWf7M">https://youtu.be/yzz3bcnWf7M</a></li>
             <li>Guide  to  deploying  Kubernetes  on Raspberry Pi: <a target="_blank" rel="noopener noreferrer" href="https://github.com/ljfranklin/k8s-pi">https://github.com/ljfranklin/k8s-pi</a></li>

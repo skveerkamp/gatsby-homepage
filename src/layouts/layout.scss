@@ -8,6 +8,7 @@ body {
 
   a, p {
     font-size: .9em;
+    line-height: 1.5em;
   }
 
   ul{
@@ -16,6 +17,7 @@ body {
   li{
     font-size: .9em;
     margin-bottom:1em;
+    line-height: 1.5em;
 
   }
 
@@ -70,6 +72,7 @@ body {
   h2{
     font-size: 1.5em;
     font-weight: 700;
+        line-height: 1.5em;
   }
 
   h3{
@@ -78,15 +81,19 @@ body {
     color:#333;
     text-transform: uppercase;
     margin-bottom:1em;
+        line-height: 1.5em;
   }
 
   h4{
     font-weight: 400;
+    font-size: 1.3em;
+        line-height: 1.5em;
   }
 
   h5{
     font-weight: 600;
     font-size: .9em;
+        line-height: 1.5em;
   }
 
   .date{
@@ -174,6 +181,18 @@ body {
 
   .margin-bottom-3{
     margin-bottom:3em;
+  }
+
+  .header-margin-2{
+    margin-top:2em;
+  }
+
+  .header-margin-1{
+    margin-top:1em;
+  }
+
+  .header-margin-3{
+    margin-top:3em;
   }
 
   footer{
