@@ -41,7 +41,9 @@ const IndexPage = ({ pageContext, data }) => {
           )
         })}
       </div>
-
+      <div className="credit">
+        <a href="https://pngtree.com//freepng/astronaut-vector-material_2194521.html">Graphic by martinbrennsund</a>
+        </div> 
   </div>
 </div>
   )

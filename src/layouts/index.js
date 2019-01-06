@@ -74,6 +74,7 @@ const Layout = ({ children, location }) => (
                 </div>
               </div>
               </div>
+
               </div>
 
             </footer>
