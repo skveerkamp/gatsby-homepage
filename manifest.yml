@@ -2,6 +2,7 @@
 applications:
 - name: homepage
   memory: 64M
+  instances: 2
   path: public
   buildpack: https://github.com/cloudfoundry/nginx-buildpack
   routes:
