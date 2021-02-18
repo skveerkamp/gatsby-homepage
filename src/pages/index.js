@@ -17,7 +17,7 @@ const IndexPage = ({ pageContext, data }) => {
       </div>
       </div>
       <div className="jumbotron-inner_tagline">
-      <h1 className="display-3">Lyle Franklin</h1>
+      <h1 className="display-3">Hermes</h1>
       <p>Staff software engineer @ Pivotal Cloud Foundry</p>
       </div>
     </div>
@@ -42,7 +42,7 @@ const IndexPage = ({ pageContext, data }) => {
       </div>
       <div className="credit">
         <a href="https://pngtree.com//freepng/astronaut-vector-material_2194521.html">Graphic by martinbrennsund</a>
-        </div> 
+        </div>
   </div>
 </div>
   )
