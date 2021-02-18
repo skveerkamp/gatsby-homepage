@@ -18,7 +18,7 @@ const IndexPage = ({ pageContext, data }) => {
       </div>
       <div className="jumbotron-inner_tagline">
       <h1 className="display-3">Hermes</h1>
-      <p>Staff software engineer @ Pivotal Cloud Foundry</p>
+      <p>Staff software dog @ Pivotal Cloud Foundry</p>
       </div>
     </div>
   </div>
