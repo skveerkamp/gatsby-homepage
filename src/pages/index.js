@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'reac'
 import Link from 'gatsby-link'
 import cover from "../images/astro2.svg"
 import { graphql } from "gatsby"
